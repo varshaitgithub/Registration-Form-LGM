@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(#1b1a6d , #ff80ec);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 1rem;
+    color: black;
+}
+h1 {
+    /* font-family: 'Merriweather', serif;*/ 
+    width: 40%;
+    margin: 20px auto auto auto;
+    padding: 5px;
+    border-radius: 50%;
+    color: rgb(27, 13, 2);
+    background-color: aqua;
+    text-align: center;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    position: fixed;
+}
+/* Left Part */
+#details {
+    position: fixed;
+    height: 500px;
+    width: 47%;
+    border-right: 3px solid black;
+    margin-top: 30px;
+    padding: 3%;
+    padding: 40px;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    
+}
+input {
+    border-radius: 10px;
+    padding: 10px;
+    height: 1.7rem;
+    margin-top: 10px;
+    height: fit-content;
+    margin-left: 30px;
+}
+input:focus {
+    outline-color: #d14545;
+}
+input[type=file]::file-selector-button {
+    background-color: rgb(165, 265, 134);
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+input[type=file]::file-selector-button:hover {
+    background-color: #77ce9e;
+    color: #2b93a8;
+    border: 2px solid #58be28;
+}
+.width {
+    width: 70%;
+    padding-left: 5px;
+}
+label {
+    text-decoration: none;
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+.radios label {
+    text-decoration: none;
+}
+.boxes label {
+    text-decoration: none;
+}
+#clear {
+    float: right;
+    background-color:#d87656;
+}
+.buttons {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+button {
+    width: 30%;
+    border-radius: 8px;
+    background-color:#f053aa ;
+    color: rgba(9, 9, 5);
+    padding: 10px;
+    transition: 0.5s;
+    border-color: #e6e8c4;
+    font-size: 500;
+}
+button:hover {
+    background-color: #e76069;
+    color: black;
+}
+#inp_male {
+    accent-color: rgba(123, 123, 170);
+}
+#inp_female {
+    accent-color: rgba(123, 123, 170);
+}
+.checkbox {
+    accent-color: rgba(123, 123, 170);
+}
+#inp_email{
+    margin-left: 35px;
+}
+.head {
+    font-weight: 600;
+    color: Black;
+}
+.radios {
+    margin-left: 100px;
+}
+.boxes {
+    margin-left: 100px;
+}
+/* Right Box */
+#output {
+    position: absolute;
+    width: 80%;
+    height: 450px;
+    padding: 20px;
+    border: radius 20px;
+    ;
+    border: 2px solid black;
+    float: right;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.right {
+    right: 0;
+}
+.left {
+    left: 0;
+}
+#output::-webkit-scrollbar {
+    width: 15px;
+}
+#output::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid rgb(26, 235, 166);
+}
+.data {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #E8C4C4;
+    margin: 10px;
+    border-radius: 10px;
+}
+.info {
+    overflow-wrap: break-word;
+    border: 1px solid #E8C4C4;
+    width: 70%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.image {
+    border: 2px solid #cf3939;
+    width: 30%;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:915px){
+    img{
+        /* margin-right: 10px; */
+        width:100%;
+        height:100%;
+    }
+}
+@media(max-width:810px){
+    img{
+        /* margin-right: 10px; */
+        width:100%;
+        height:70%;
+        margin-top: 15px;
+    }
+}
+@media(max-width:660px){
+    img{
+        height:50%;
+        margin-top: 30px;
+    }
+}
